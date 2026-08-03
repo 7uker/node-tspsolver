@@ -11,14 +11,14 @@
     "scripts": {
         "pretty": "prettier --write src/*.js",
         "test": "jest src/spec.js",
-        "prebuild": "node-gyp configure",
-        "build": "node-gyp build",
-        "rebuild": "node-gyp rebuild",
+        "prebuild": "node scripts/run-node-gyp.js configure",
+        "build": "node scripts/run-node-gyp.js build",
+        "rebuild": "node scripts/run-node-gyp.js rebuild",
         "clean": "node-gyp clean"
     },
     "engineStrict": true,
     "engines": {
-        "node": ">=5.0.0"
+        "node": ">=20.0.0"
     },
     "author": "Saby",
     "license": "MIT",

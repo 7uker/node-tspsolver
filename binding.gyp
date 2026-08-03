@@ -1,4 +1,10 @@
 {
+  'variables': {
+    'enable_lto': 0,
+    'enable_thin_lto': 0,
+    'lto_jobs': 0,
+    'node_with_ltcg': 0
+  },
   'targets': [
     {
       'target_name': 'node-tspsolver',
